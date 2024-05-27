@@ -85,3 +85,24 @@ function scrollActive() {
     })
 }
 window.addEventListener('scroll', scrollActive)
+document.getElementById("downloadCvBtn").addEventListener("click", function() {
+    // Change the path to your PDF file if it's located in a different directory
+    const pdfPath = "Resume-On Campus.pdf";
+    const link = document.createElement("a");
+    link.href = pdfPath;
+    link.download = "Resume-On Campus.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+});
+
+document.getElementById("downloadCvBt").addEventListener("click", function() {
+    // Change the path to your PDF file if it's located in a different directory
+    const pdfPath = "Resume-On Campus.pdf";
+    const link = document.createElement("a");
+    link.href = pdfPath;
+    link.download = "Resume-On Campus.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+});
